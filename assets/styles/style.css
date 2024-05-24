@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* font-family: "Playfair Display", serif; */
+/* font-family: "Montserrat", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-black-color: #333333;
+    --white-color: #FFFFFF;
+    --black-text-color: #091D03;
+    --location-sec-black: #000000;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: var(--white-color);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--btn-black-color);
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s ease;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --------buttons------- */
+
+.black-bg-btn {
+    padding: 12px 20px 12px 20px;
+    background: var(--btn-black-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: var(--white-color);
+}
+
+.white-bg-btn {
+    padding: 4px 10px 4px 10px;
+    background: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: var(--btn-black-color);
+}
+
+.border-btn {
+    padding: 4px 10px 4px 10px;
+    background: var(--white-color);
+    border: 1px solid var(--btn-black-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: var(--btn-black-color);
+}
+
+
+/* -----navbar----- */
+
+.navbar {
+    background: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/* --------hero section-------- */
+
+.hero-section {
+    background-image: url("/assets/images/main-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 740px;
+}
+
+.inner-text {
+    padding-top: 213px;
+}
+
+.inner-text h1 {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 86px;
+    letter-spacing: -0.02em;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+/* ---------unique student project section-------- */
+
+.unique-project {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.unique-project h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    padding-bottom: 32px;
+}
+
+.unique-project p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+}
+
+#cta {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 32px;
+}
