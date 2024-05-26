@@ -1,135 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAPITALL</title>
-    <link
-      rel="shortcut icon"
-      href="/assets/images/logo.svg"
-      type="image/x-icon"
-    />
 
-    <link rel="stylesheet" href="/assets/styles/style.css" />
-    <link rel="stylesheet" href="/assets/styles/responsive.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAPITALL</title>
+  <link rel="shortcut icon" href="/assets/images/logo.svg" type="image/x-icon" />
 
-  <body>
-    <header>
+  <link rel="stylesheet" href="/assets/styles/style.css" />
+  <link rel="stylesheet" href="/assets/styles/responsive.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="/">
+          <img src="/assets/images/logo-img.png" alt="logo-img" />
+        </a>
+        <a href="#" class="black-bg-btn">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- hero section -->
+    <div class="hero-section">
       <div class="container">
-        <nav class="navbar">
-          <a href="/">
-            <img src="/assets/images/logo-img.png" alt="logo-img" />
-          </a>
-          <a href="#" class="black-bg-btn">Contact Us</a>
-        </nav>
+        <div class="row">
+          <div class="col-sm-6 inner-text">
+            <a href="#" class="white-bg-btn">Centre 1</a>
+            <h1>Student real estate in Antwerp</h1>
+          </div>
+          <div class="col-sm-6 vertical-form">
+            <p>Receive more information about student rooms in antwerp?</p>
+            <form action="/">
+              <input type="text" id="fname" name="firstname" placeholder="Name" required>
+              <input type="text" id="lname" name="lastname" placeholder="Family Name" required>
+              <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{6}" placeholder="Postal Code" required>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+              <label>
+                <input type="checkbox" id="checkbox">
+                <span class="custom-checkbox"></span>
+                <span class="checkbox-label">Yes, I would like to receive more information and agree to the <u>privacy disclaimer</u></span>
+            </label>
+            <input type="submit" value="Submit" id="submit">
+            </form>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
+    <!-- unique student project section -->
+    <div class="unique-project">
+      <div class="container">
+        <a href="#" class="border-btn">Centre 1</a>
+        <h2>A unique student project in Antwerp</h2>
+        <p>
+          We are pleased to offer you this small-scale investment project of
+          16 student rooms, located in the vibrant heart of the university
+          area of ​​Antwerp.
+        </p><br>
+        <p>
+          Antwerp, the second largest student city in Flanders after Ghent,
+          currently has more than <b>500,000 inhabitants</b> and welcomes more than
+          <b>60,000 students.</b> The demand for student rooms in the city continues
+          to rise year after year. For example, in 2023, 10% more students
+          chose a room than the year before. However, this growing demand has
+          not led to a similar increase in supply, resulting in both a
+          qualitative and quantitative shortage of student housing.
+        </p><br>
+        <p>
+          Centre.1 is a stylish building that is equipped with all modern
+          comforts and meets the contemporary standards and requirements of
+          the modern student. It offers an ideal solution for investors who
+          want to contribute to tackling the acute shortage of student rooms. <br>
+          At Centre.1 you not only opt for an investment in a triple A
+          location in the heart of the student area, but also for an
+          energy-efficient building that meets the needs of modern times.
+          Moreover, Centre.1 offers a small-scale and well-organized approach,
+          without having to invest in a large complex.
+        </p><br>
+        <p>
+          Welcome to Centre.1 - the ideal choice for those looking to invest
+          in the growing student housing market in Antwerp.
+        </p>
+        <a href="#" class="black-bg-btn" id="cta">Get in Touch</a>
+      </div>
+    </div>
+    <!-- glance points -->
+    <div class="glance-points">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4>Centre.1 at a glance</h4>
+          </div>
+          <div class="col-sm-4">
+            <div class="inner-content">
+              <img src="/assets/images/tick.png" alt="image">
+              <p>Almost sold out</p>
+            </div>
+            <div class="inner-content">
+              <img src="/assets/images/tick.png" alt="image">
+              <p>Prices from € 190,000</p>
+            </div>
+            <div class="inner-content" id="pad-remove">
+              <img src="/assets/images/tick.png" alt="image">
+              <p>Located in student area Antwerp</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="inner-content">
+              <img src="/assets/images/tick.png" alt="image">
+              <p>Immediate income after deed</p>
+            </div>
+            <div class="inner-content">
+              <img src="/assets/images/tick.png" alt="image">
+              <p>Managed and rented for you</p>
+            </div>
+            <div class="inner-content" id="pad-remove">
+              <img src="/assets/images/tick.png" alt="image">
+              <p>Purchase in full ownership</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- grid gallery -->
+    <div class="grid-gallery">
+      <div class="container">
+        <a href="#" class="border-btn">Centre 1</a>
+        <h2>in picture</h2>
+        <div class="grid-card-container">
+          <img src="/assets/images/grid-img1.png" alt="image" class="first-image">
+          <img src="/assets/images/grid-img2.png" alt="image" class="second-image">
+          <img src="/assets/images/grid-img3.png" alt="image" class="third-image">
+          <img src="/assets/images/grid-img4.png" alt="image" class="first-image">
+          <img src="/assets/images/grid-img5.png" alt="image" class="first-image">
+        </div>
+      </div>
+    </div>
+    <!-- location section -->
+    <div class="location">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#" class="border-btn">Centre 1</a>
+            <h2>Student residence in a prime location!</h2>
+            <p>The Centre.1 student house is located at a AAA location. This strategic location ensures a constant
+              demand for rooms, which benefits the occupancy rate and the value of the real estate.</p>
+            <hr>
+            <p id="para">The following important facilities are within walking distance: </p>
+            <ol>
+              <li>COLLEGES & UNIVERSITIES - 1 min</li>
+              <li>PUBLIC TRANSPORT - 1 min</li>
+              <li>SUPERMARKETS & SHOPS - 2 min</li>
+              <li>RECREATION & LEISURE - parks & cinema</li>
+              <li>LIBRARY & STUDENT ROOMS - 2 min</li>
+              <li>RESTAURANTS & STUDENT CAFES - 2 min</li>
+              <li>SPORTS FACILITIES - 4 min</li>
+            </ol>
+          </div>
+          <div class="col-sm-6">
+            <a href="http://maps.google.com/?q=817-A, Bestech Business Tower, Colony, Sector 66, Sahibzada Ajit Singh Nagar, Punjab 160066"
+              target="_blank"><img src="/assets/images/google-map.png" alt="image"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- perks section -->
+    <div class="perks">
+      <div class="container">
+        <a href="#" class="border-btn">Important Factors</a>
+        <h2>Why invest in student rooms in Antwerp?</h2>
+        <p>Investing in student rooms in Antwerp is an attractive option because of the numerous benefits it brings.
+          Here are some compelling reasons why investing in student accommodation in Antwerp can be lucrative</p>
+        <div class="row">
+          <p>IDEAL LOCATION</p>
+          <p>SMALL-SCALE & COZY</p>
+          <p>HIGH-QUALITY FACILITIES</p>
+          <p>SUSTAINABILITY & <br> ENERGY EFFICIENCY</p>
+          <p>STABLE YIELDS</p>
+          <p>PROFESSIONAL MANAGEMENT</p>
+          <p>FIXED PRICES</p>
+          <p>PURCHASE OF <br> ENTIRE OWNERSHIP</p>
+          <p>PURCHASE UNDER <br> REGISTRATION RIGHTS</p>
+        </div>
+        <a href="#" class="black-bg-btn" id="cta">Get in Touch</a>
+      </div>
+    </div>
+    <!-- call to action section -->
+    <div class="call-to-action">
+      <div class="content">
+        <h2>Are you Ready to Invest</h2>
+        <a href="#" class="black-bg-btn" id="get-in-touch">Get in Touch</a>
+      </div>
+    </div>
+  </main>
 
-    <main>
-      <!-- hero section -->
-      <div class="hero-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 inner-text">
-              <a href="#" class="white-bg-btn">Centre 1</a>
-              <h1>Student real estate in Antwerp</h1>
-            </div>
-            <div class="col-sm-6 vertical-form"></div>
-          </div>
-        </div>
+  <footer>
+    <div class="container">
+      <div class="footer">
+        <a href="/">
+          <img src="/assets/images/logo-img.png" alt="logo-img" />
+        </a>
+        <p>Copyright © 2024, All Rights Reserved Immowi.com - <u>Privacy Disclaimer</u></p>
       </div>
-      <!-- unique student project section -->
-      <div class="unique-project">
-        <div class="container">
-          <a href="#" class="border-btn">Centre 1</a>
-          <h2>A unique student project in Antwerp</h2>
-          <p>
-            We are pleased to offer you this small-scale investment project of
-            16 student rooms, located in the vibrant heart of the university
-            area of ​​Antwerp.
-          </p><br>
-          <p>
-            Antwerp, the second largest student city in Flanders after Ghent,
-            currently has more than <b>500,000 inhabitants</b> and welcomes more than
-            <b>60,000 students.</b> The demand for student rooms in the city continues
-            to rise year after year. For example, in 2023, 10% more students
-            chose a room than the year before. However, this growing demand has
-            not led to a similar increase in supply, resulting in both a
-            qualitative and quantitative shortage of student housing.
-          </p><br>
-          <p>
-            Centre.1 is a stylish building that is equipped with all modern
-            comforts and meets the contemporary standards and requirements of
-            the modern student. It offers an ideal solution for investors who
-            want to contribute to tackling the acute shortage of student rooms. <br>
-            At Centre.1 you not only opt for an investment in a triple A
-            location in the heart of the student area, but also for an
-            energy-efficient building that meets the needs of modern times.
-            Moreover, Centre.1 offers a small-scale and well-organized approach,
-            without having to invest in a large complex.
-          </p><br>
-          <p>
-            Welcome to Centre.1 - the ideal choice for those looking to invest
-            in the growing student housing market in Antwerp.
-          </p>
-          <a href="#" class="black-bg-btn" id="cta">Get in Touch</a>
-        </div>
-      </div>
-      <!-- glance points -->
-      <div class="glance-points">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <h4>Centre.1 at a glance</h4>
-            </div>
-            <div class="col-sm-4">
-              <div class="inner-content">
-                <img src="/assets/images/tick.png" alt="image">
-                <p>Almost sold out</p>
-              </div>
-              <div class="inner-content">
-                <img src="/assets/images/tick.png" alt="image">
-                <p>Prices from € 190,000</p>
-              </div>
-              <div class="inner-content" id="pad-remove">
-                <img src="/assets/images/tick.png" alt="image">
-                <p>Located in student area Antwerp</p>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="inner-content">
-                <img src="/assets/images/tick.png" alt="image">
-                <p>Immediate income after deed</p>
-              </div>
-              <div class="inner-content">
-                <img src="/assets/images/tick.png" alt="image">
-                <p>Managed and rented for you</p>
-              </div>
-              <div class="inner-content" id="pad-remove">
-                <img src="/assets/images/tick.png" alt="image">
-                <p>Purchase in full ownership</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- grid gallery -->
-      <div class="grid-gallery">
-        <div class="container">
-          <a href="#" class="border-btn">Centre 1</a>
-          <h2>in picture</h2>
-          <div class="grid-card-container">
-            <img src="/assets/images/grid-img1.png" alt="image" class="first-image">
-            <img src="/assets/images/grid-img2.png" alt="image" class="second-image">
-            <img src="/assets/images/grid-img3.png" alt="image" class="third-image">
-            <img src="/assets/images/grid-img4.png" alt="image" class="first-image">
-            <img src="/assets/images/grid-img5.png" alt="image" class="first-image">
-          </div>
-        </div>
-      </div>
-    </main>
+    </div>
+  </footer>
 
-    <footer></footer>
-  </body>
+</body>
 </html>

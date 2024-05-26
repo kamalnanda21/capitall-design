@@ -64,6 +64,7 @@ ul {
     line-height: 22px;
     letter-spacing: -0.02em;
     color: var(--btn-black-color);
+    transition: all 0.4s ease-in-out;
 }
 
 .border-btn {
@@ -75,6 +76,7 @@ ul {
     line-height: 22px;
     letter-spacing: -0.02em;
     color: var(--btn-black-color);
+    transition: all 0.4s ease-in-out;
 }
 
 .border-btn:hover, .white-bg-btn:hover {
@@ -85,7 +87,7 @@ ul {
 
 /* -----navbar----- */
 
-.navbar {
+.navbar, .footer {
     background: var(--white-color);
     display: flex;
     align-items: center;
@@ -108,6 +110,7 @@ ul {
 .hero-section .row {
     max-width: 1440px;
     margin-inline: auto;
+    justify-content: space-between;
 }
 
 .inner-text {
@@ -121,6 +124,107 @@ ul {
     letter-spacing: -0.02em;
     color: var(--white-color);
     text-transform: capitalize;
+}
+
+.input-fields {
+    padding-left: 9px;
+}
+
+.vertical-form {
+    background: var(--white-color);
+    min-height: 610px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 461px !important;
+    box-shadow: 10px 4px 4px 0px #00000040;
+}
+
+.vertical-form p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    padding: 40px 9px 24px 9px !important;
+    color: #091D03;
+}
+
+form {
+    padding-left: 9px;
+}
+
+input {
+    border: 1px solid #D5DAE1;
+    height: 48px;
+    width: 413px;
+    padding: 12px 14px 12px 14px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333F51;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+label {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 24px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    display: block;
+}
+
+.checkbox-label {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: var(--location-sec-black);
+}
+
+#submit {
+    background: var(--btn-black-color);
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in;
+}
+
+#submit:hover {
+    color: var(--btn-black-color);
+    background-color: rgb(185, 185, 185);
+    cursor: pointer;
 }
 
 /* ---------unique student project section-------- */
@@ -232,4 +336,152 @@ ul {
 
 .third-image {
     grid-row: span 4 / auto;
+}
+
+/* -------location section----- */
+
+.location {
+    background: var(--grey-bg-color);
+    padding-bottom: 100px;
+    padding-top: 100px;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+.location .col-sm-6 h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    max-width: 508px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.location .col-sm-6 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: capitalize;
+    max-width: 498px;
+    padding-bottom: 16px;
+    color: #000000B2;
+}
+
+hr {
+    width: 495px;
+    background: #BBBBBB;
+}
+
+#para {
+    padding-top: 16px;
+    color: var(--location-sec-black);
+}
+
+ol {
+    list-style-position: inside;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+}
+
+/* ----perks section---- */
+
+.perks {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+    margin-inline: auto;
+}
+
+.perks h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 67px;
+    letter-spacing: -0.02em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.perks p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #000000B2;
+    text-transform: capitalize;
+}
+
+.perks .row {
+    justify-content: center;
+    padding-top: 32px;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.perks .row p {
+    width: 384px;
+    height: 80px;
+    align-content: center;
+    background: var(--grey-bg-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+}
+
+/* ----call to action------ */
+
+.call-to-action {
+    background-image: url("/assets/images/last-sec-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 561px;
+    text-align: center;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 86px;
+    letter-spacing: -0.02em;
+    color: var(--white-color);
+    padding-bottom: 28px;
+    max-width: 746px;
+    margin-inline: auto;
+}
+
+#get-in-touch {
+    background: var(--white-color);
+    color: var(--btn-black-color);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+#get-in-touch:hover {
+    background-color: var(--btn-black-color);
+    color: var(--white-color);
+}
+
+/* ---footer---- */
+
+.footer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--location-sec-black);
 }
