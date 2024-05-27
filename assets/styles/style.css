@@ -78,13 +78,6 @@ ul {
     transition: all 0.4s ease-in-out;
 }
 
-/* -------header--------- */
-
-header, footer {
-    max-width: 1440px;
-    margin-inline: auto;
-}
-
 /* -----navbar----- */
 
 .navbar, .footer {
@@ -94,8 +87,6 @@ header, footer {
     justify-content: space-between;
     padding-top: 18px;
     padding-bottom: 18px;
-    max-width: 1440px;
-    margin-inline: auto;
 }
 
 /* --------hero section-------- */
@@ -104,13 +95,17 @@ header, footer {
     background-image: url("/assets/images/main-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    min-height: 740px;
+}
+
+.hero-section .container, header .container, footer .container, .glance-points .container,
+.location .container, .perks .container, .call-to-action .container {
     max-width: 1440px;
     margin-inline: auto;
 }
 
 .hero-section .row {
-    max-width: 1440px;
-    margin-inline: auto;
     justify-content: space-between;
 }
 
@@ -260,7 +255,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     text-transform: capitalize;
 }
 
-#cta {
+.cta {
     font-size: 18px;
     line-height: 22px;
     margin-top: 32px;
@@ -271,8 +266,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 .glance-points {
     background: var(--grey-bg-color);
     margin-bottom: 100px;
-    max-width: 1440px;
-    margin-inline: auto;
 }
 
 .glance-points .row {
@@ -303,7 +296,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     padding-left: 8px;
 }
 
-#pad-remove {
+.pad-remove {
     padding-bottom: 0;
 }
 
@@ -314,53 +307,99 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 }
 
 .grid-card-container {
+    height: 1387px;
     padding-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
     grid-auto-rows: auto;
     grid-auto-flow: dense;
-    gap: 20px;
     max-width: 1170px;
     margin-inline: auto;
+}
+
+.grid-card {
     position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.grid-card-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.first-image {
+.grid-card:nth-child(1) {
     grid-row: span 2 / auto;
     grid-column: span 2 / auto;
+    background-image: url("../images/grid-img1.png");
 }
 
-.second-image {
+.grid-card:nth-child(2) {
     grid-row: span 2 / auto;
+    background-image: url("../images/grid-img2.png");
 }
 
-.third-image {
+.grid-card:nth-child(3) {
     grid-row: span 4 / auto;
+    background-image: url("../images/grid-img3.png");
 }
 
-#hover-overlay {
-    position: relative;
-    cursor: pointer;
+.grid-card:nth-child(4) {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+    background-image: url("../images/grid-img4.png");
 }
 
-#hover-overlay:hover ~ .hover-content p,
-#hover-overlay:hover ~ .hover-content img {
+.grid-card:nth-child(5) {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+    background-image: url("../images/grid-img5.png");
+}
+
+.grid-card::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0,0.544);
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 1s ease-in-out;
+}
+
+.grid-card:hover::before {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+.grid-card::after {
+    content: "";
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.grid-card:hover::after {
     opacity: 1;
+    visibility: visible;
 }
 
-.hover-content {
+.grid-card .hover-content {
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 38%;
-    bottom: 69%;
+}
+
+.grid-card:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
 }
 
 .hover-content p {
@@ -369,16 +408,11 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     line-height: 22px;
     padding-right: 10px;
     color: var(--white-color);
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
 
 .hover-content img {
     width: 48px;
     height: 48px;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
 }
 
 /* -------location section----- */
@@ -387,8 +421,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     background: var(--grey-bg-color);
     padding-bottom: 100px;
     padding-top: 100px;
-    max-width: 1440px;
-    margin-inline: auto;
 }
 
 .location .col-sm-6 h2 {
@@ -413,12 +445,16 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     color: #000000B2;
 }
 
+.location .col-sm-6 iframe {
+    border: 1px solid var(--btn-black-color);
+}
+
 hr {
     width: 495px;
     background: #BBBBBB;
 }
 
-#para {
+.para {
     padding-top: 16px;
     color: var(--location-sec-black);
 }
@@ -437,8 +473,6 @@ ol {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    max-width: 1440px;
-    margin-inline: auto;
 }
 
 .perks h2 {
@@ -487,8 +521,6 @@ ol {
     min-height: 561px;
     text-align: center;
     position: relative;
-    max-width: 1440px;
-    margin-inline: auto;
 }
 
 .content {
@@ -510,7 +542,7 @@ ol {
     margin-inline: auto;
 }
 
-#get-in-touch {
+.get-in-touch {
     background: var(--white-color);
     color: var(--btn-black-color);
     font-size: 18px;
@@ -518,14 +550,14 @@ ol {
     line-height: 22px;
 }
 
-#get-in-touch:hover {
+.get-in-touch:hover {
     background-color: var(--btn-black-color);
     color: var(--white-color);
 }
 
 /* ---footer---- */
 
-.footer p {
+.copyright {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
