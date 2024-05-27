@@ -325,6 +325,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .grid-card:nth-child(1) {
@@ -355,19 +356,19 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     background-image: url("../images/grid-img5.png");
 }
 
-.grid-card::before {
-    content: "";
+.overlay {
     position: absolute;
-    background: rgba(0, 0, 0,0.544);
-    inset: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 1s ease-in-out;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.grid-card:hover::before {
-    transform: scale(1);
-    transform-origin: left;
+.grid-card:hover .overlay {
+    opacity: 1;
 }
 
 .grid-card .hover-content {
