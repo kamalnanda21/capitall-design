@@ -370,23 +370,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     transform-origin: left;
 }
 
-.grid-card::after {
-    content: "";
-    position: absolute;
-    text-transform: uppercase;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease-in-out;
-}
-
-.grid-card:hover::after {
-    opacity: 1;
-    visibility: visible;
-}
-
 .grid-card .hover-content {
     position: absolute;
     bottom: 17px;
