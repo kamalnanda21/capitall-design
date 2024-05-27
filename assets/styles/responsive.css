@@ -153,9 +153,8 @@
 
 @media (max-width: 767px) {
 
-    .hero-section .col-sm-6 {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
+    .custom-checkbox {
+        width: 50px;
     }
 
     .navbar, .footer {
@@ -185,6 +184,10 @@
     .location .col-sm-6 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .footer p {
+        text-align: center;
     }
 
 }

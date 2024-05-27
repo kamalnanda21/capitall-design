@@ -185,8 +185,8 @@ input[type="checkbox"] {
 
 .custom-checkbox {
     display: inline-block;
-    width: 25px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background-color: transparent;
     border: 2px solid #000;
     border-radius: 3px;
@@ -211,12 +211,14 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 }
 
 .checkbox-label {
-    margin-left: 5px;
+    margin-left: 10px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     color: var(--location-sec-black);
+    margin-top: -5px;
+    max-width: 357px;
 }
 
 #submit {
@@ -439,6 +441,7 @@ ol {
     font-size: 18px;
     font-weight: 600;
     line-height: 27px;
+    color: var(--location-sec-black);
     letter-spacing: -0.04em;
 }
 
