@@ -84,6 +84,12 @@ ul {
     background-color: var(--btn-black-color);
 }
 
+/* -------header--------- */
+
+header, footer {
+    max-width: 1440px;
+    margin-inline: auto;
+}
 
 /* -----navbar----- */
 
@@ -104,7 +110,8 @@ ul {
     background-image: url("/assets/images/main-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: calc(100vh - 80px);
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 .hero-section .row {
@@ -115,6 +122,7 @@ ul {
 
 .inner-text {
     padding-top: 213px;
+    padding-left: 0 !important;
 }
 
 .inner-text h1 {
@@ -443,6 +451,8 @@ ol {
     min-height: 561px;
     text-align: center;
     position: relative;
+    max-width: 1440px;
+    margin-inline: auto;
 }
 
 .content {
