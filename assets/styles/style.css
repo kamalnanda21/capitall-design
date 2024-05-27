@@ -324,6 +324,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .grid-card:nth-child(1) {
