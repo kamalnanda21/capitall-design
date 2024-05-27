@@ -185,6 +185,10 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+    
+    .hover-content {
+        display: none;
+    }
 
     .footer p {
         text-align: center;
@@ -206,6 +210,15 @@
 
     .hero-section .row {
         justify-content: center;
+    }
+
+    .hover-content p {
+        font-size: 16px;
+    }
+
+    .hover-content {
+        right: 35%;
+        bottom: 71%;
     }
 
     .location .col-sm-6 img {

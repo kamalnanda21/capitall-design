@@ -32,7 +32,6 @@ a {
     display: inline-block;
     transition: all 0.5s ease;
     font-weight: 400;
-    cursor: pointer;
 }
 
 ul {
@@ -77,11 +76,6 @@ ul {
     letter-spacing: -0.02em;
     color: var(--btn-black-color);
     transition: all 0.4s ease-in-out;
-}
-
-.border-btn:hover, .white-bg-btn:hover {
-    color: var(--white-color);
-    background-color: var(--btn-black-color);
 }
 
 /* -------header--------- */
@@ -198,7 +192,8 @@ input[type="checkbox"] {
     content: "";
     position: absolute;
     display: none;
-    left: 5px;
+    top: 3px;
+    left: 6px;
     width: 5px;
     height: 10px;
     border: solid #000;
@@ -327,6 +322,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     gap: 20px;
     max-width: 1170px;
     margin-inline: auto;
+    position: relative;
 }
 
 .grid-card-container img {
@@ -346,6 +342,43 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .third-image {
     grid-row: span 4 / auto;
+}
+
+#hover-overlay {
+    position: relative;
+    cursor: pointer;
+}
+
+#hover-overlay:hover ~ .hover-content p,
+#hover-overlay:hover ~ .hover-content img {
+    opacity: 1;
+}
+
+.hover-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 38%;
+    bottom: 69%;
+}
+
+.hover-content p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-right: 10px;
+    color: var(--white-color);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hover-content img {
+    width: 48px;
+    height: 48px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* -------location section----- */
