@@ -25,6 +25,13 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--btn-black-color);
     font-family: "Playfair Display", serif;
     font-weight: 500;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 67px;
+    letter-spacing: -0.02em;
 }
 
 a {
@@ -36,6 +43,11 @@ a {
 
 ul {
     list-style: none;
+}
+
+.spacer {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* --------buttons------- */
@@ -99,40 +111,25 @@ ul {
     min-height: 740px;
 }
 
-.hero-section .container, header .container, footer .container, .glance-points .container,
-.location .container, .perks .container, .call-to-action .container {
-    max-width: 1440px;
-    margin-inline: auto;
-}
-
 .hero-section .row {
+    align-items: center;
     justify-content: space-between;
-}
-
-.inner-text {
-    padding-top: 213px;
-    padding-left: 0 !important;
+    padding-top: 60px;
 }
 
 .inner-text h1 {
     font-size: 72px;
-    font-weight: 500;
     line-height: 86px;
     letter-spacing: -0.02em;
     color: var(--white-color);
     text-transform: capitalize;
 }
 
-.input-fields {
-    padding-left: 9px;
-}
-
 .vertical-form {
     background: var(--white-color);
     min-height: 610px;
-    margin-top: 50px;
-    margin-bottom: 50px;
     max-width: 461px !important;
+    padding: 40px 24px 40px 24px !important;
     box-shadow: 10px 4px 4px 0px #00000040;
 }
 
@@ -141,12 +138,8 @@ ul {
     font-weight: 500;
     line-height: 34px;
     letter-spacing: -0.02em;
-    padding: 40px 9px 24px 9px !important;
+    padding-bottom: 24px;
     color: #091D03;
-}
-
-form {
-    padding-left: 9px;
 }
 
 input {
@@ -158,13 +151,14 @@ input {
     font-weight: 500;
     line-height: 24px;
     color: #333F51;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     letter-spacing: 0.5px;
 }
 
 label {
     display: flex;
     align-items: flex-start;
+    padding-top: 24px;
     padding-bottom: 24px;
 }
 
@@ -177,7 +171,7 @@ input[type="checkbox"] {
     width: 24px;
     height: 24px;
     background-color: transparent;
-    border: 2px solid #000;
+    border: 1.5px solid var(--btn-black-color);
     border-radius: 3px;
     position: relative;
     cursor: pointer;
@@ -191,7 +185,7 @@ input[type="checkbox"] {
     left: 6px;
     width: 5px;
     height: 10px;
-    border: solid #000;
+    border: solid var(--btn-black-color);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
@@ -217,7 +211,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     transition: all 0.3s ease-in;
 }
 
@@ -231,20 +225,13 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .unique-project {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
     max-width: 1440px;
     margin-inline: auto;
 }
 
 .unique-project h2, .grid-gallery h2 {
-    font-size: 56px;
-    font-weight: 500;
-    line-height: 67px;
-    letter-spacing: -0.02em;
     padding-bottom: 32px;
     padding-top: 10px;
-    text-transform: capitalize;
 }
 
 .unique-project p {
@@ -265,7 +252,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .glance-points {
     background: var(--grey-bg-color);
-    margin-bottom: 100px;
 }
 
 .glance-points .row {
@@ -308,7 +294,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .grid-card-container {
     height: 1387px;
-    padding-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
@@ -364,7 +349,7 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .grid-card:hover .overlay {
@@ -373,11 +358,11 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .grid-card .hover-content {
     position: absolute;
-    bottom: 17px;
-    right: 17px;
+    bottom: 0;
+    right: 0;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
     display: flex;
     align-items: center;
 }
@@ -385,6 +370,8 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 .grid-card:hover .hover-content {
     opacity: 1;
     visibility: visible;
+    bottom: 17px;
+    right: 17px;
 }
 
 .hover-content p {
@@ -404,16 +391,9 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
 
 .location {
     background: var(--grey-bg-color);
-    padding-bottom: 100px;
-    padding-top: 100px;
 }
 
 .location .col-sm-6 h2 {
-    font-size: 56px;
-    font-weight: 500;
-    line-height: 67px;
-    letter-spacing: -0.02em;
-    text-transform: capitalize;
     max-width: 508px;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -456,15 +436,9 @@ ol {
 
 .perks {
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .perks h2 {
-    font-size: 56px;
-    font-weight: 500;
-    line-height: 67px;
-    letter-spacing: -0.02em;
     padding-top: 10px;
     padding-bottom: 20px;
 }
@@ -517,10 +491,6 @@ ol {
 }
 
 .content h2 {
-    font-size: 72px;
-    font-weight: 500;
-    line-height: 86px;
-    letter-spacing: -0.02em;
     color: var(--white-color);
     padding-bottom: 28px;
     max-width: 746px;

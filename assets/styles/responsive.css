@@ -1,8 +1,7 @@
 /* default classes */
 
 .container {
-    width: 100%;
-    padding-inline: 135px;
+    max-width: 1170px;
     margin-inline: auto;
 }
 
@@ -100,15 +99,8 @@
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1300px;
-        padding-inline: 60px;
-    }
-}
-
-@media (min-width: 1440px) {
-    .container {
-        max-width: 100%;
-        padding-inline: 135px;
+        max-width: 1170px;
+        padding-inline: 0;
     }
 }
 
@@ -158,19 +150,24 @@
     }
 
     .footer .img {
-        width: 30%;
+        width: 50%;
+    }
+
+    .black-bg-btn {
+        white-space: nowrap;
     }
 
     .navbar img {
-        width: 100%;
+        width: 90%;
     }
     
     .footer img {
-        width: -webkit-fill-available;
+        width: 100%;
     }
 
     .copyright {
         text-align: center;
+        padding-left: 10%;
     }
 
     .hover-content p {
@@ -218,6 +215,10 @@
 
     .footer {
         gap: 20px;
+    }
+
+    .footer img {
+        width: -webkit-fill-available;
     }
 
     input {
