@@ -115,6 +115,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .inner-text h1 {

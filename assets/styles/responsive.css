@@ -145,6 +145,10 @@
         max-width: 100%;
     }
 
+    .vertical-form {
+        margin-top: 40px;
+    }
+
     .hero-section .row {
         justify-content: center;
     }
